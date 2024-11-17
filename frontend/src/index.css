@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* dotted bg not sure if I like this */
+body {
+  background-image: radial-gradient(rgba(125, 112, 112, 0.75) 2px, transparent 2px);
+  background-size: 48px 48px;
+  background-color: #ffffff;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -82,13 +90,5 @@
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-@layer utilities {
-  .bg-pattern {
-    background-image: linear-gradient(rgba(139, 97, 255, 0.35) 2px, transparent 2px), linear-gradient(to right, rgba(139, 97, 255, 0.35) 2px, transparent 2px);
-    background-size: 31px 31px;
-    background-color: #ffffff;
   }
 }
